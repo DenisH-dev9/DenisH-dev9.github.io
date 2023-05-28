@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #fceec8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.leftContent,.rightContent {
+    flex-basis: 50%;
+}
+.leftContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    grid-gap: 2rem;
+}
+.card {
+    width: 300px;
+    background-color: #9edef9;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.rightContent {
+    width: 50%;
+    text-align: center;
+    color: #000;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+.rightContent img {
+    margin: 2rem;
+    height: 180px;
+}
+.rightContent h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group {
+    background-color: #b74555;
+    color: #fff;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.baseStats {
+    margin-top: 2rem;
+}
+
+.btnGroup {
+    display: flex;
+}
+.btnGroup button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 5px 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b74555;
+    border-radius: 8px;
+}
+
+.inpSearch {
+    padding: 5px 0;
+    text-align: center;
+}
