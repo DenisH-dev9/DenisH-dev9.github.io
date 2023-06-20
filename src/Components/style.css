@@ -94,3 +94,31 @@ body {
     padding: 5px 0;
     text-align: center;
 }
+
+@media(max-width: 600px){
+    .card {
+        width: 140px;
+        padding: 0 6px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .cardId {
+        display: none;
+    }
+    .card h2 {
+        margin-top: -14px;
+    }
+    .rightContent {
+        width: 40%;
+        right: 60px;
+    }
+    .rightContent h1 {
+        margin-top: 24px;
+    }
+    .leftContent {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 0.5fr));
+        grid-gap: 1.5rem;
+    }
+}
