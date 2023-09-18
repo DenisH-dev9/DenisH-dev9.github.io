@@ -68,8 +68,11 @@ const Main = () => {
     fetchPokemonData();
   }, [url]);
 
+
+
   return (
     <>
+    <h1 className="pageTitle">PokeDex</h1>
       <div className="container">
         <div className="leftContent">
           <input
@@ -79,9 +82,9 @@ const Main = () => {
             value={searchQuery}
             onChange={handleSearch}
           />
-          <div>
+          <div className="show">
             Show:
-            <select value={perPage} onChange={handlePerPageChange}>
+            <select className="showSelect" value={perPage} onChange={handlePerPageChange}>
               <option value={10}>10</option>
               <option value={20}>20</option>
               <option value={50}>50</option>
@@ -103,6 +106,7 @@ const Main = () => {
         </div>
         <div className="rightContent">
           <Pokeinfo data={pokeDex} />
+          
         </div>
       </div>
     </>
